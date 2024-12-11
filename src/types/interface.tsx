@@ -1,5 +1,5 @@
 import { LucideIcon } from "lucide-react";
-import { Url } from "next/dist/shared/lib/router/router";
+import { Image } from "sanity";
 
 export interface SocialLink {
     href: string;
@@ -37,7 +37,7 @@ export interface Project {
     _id: string;
     title: string;
     description: string;
-    images: Url[];
+    images: Image[];
     tags: string[];
     demoLink: string;
     githubLink: string;
