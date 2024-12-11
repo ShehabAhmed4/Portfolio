@@ -38,6 +38,7 @@ export interface Image {
       _ref: string; // مرجع الصورة في Sanity
       _type: string; // نوع المرجع
     };
+    url?: string; // أضف هذه إذا كان urlForImage تتطلب url
   }
 
 
