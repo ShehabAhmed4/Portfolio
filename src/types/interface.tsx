@@ -1,4 +1,5 @@
 import { LucideIcon } from "lucide-react";
+import { Url } from "next/dist/shared/lib/router/router";
 
 export interface SocialLink {
     href: string;
@@ -31,22 +32,12 @@ export interface TabItem {
 }
 
 
-// واجهة تمثل الصورة
-export interface Image {
-    _type: string; // نوع البيانات (قد يكون مفيدًا في Sanity)
-    asset: {
-      _ref: string; // مرجع الصورة في Sanity
-      _type: string; // نوع المرجع
-    };
-    url?: string; // أضف هذه إذا كان urlForImage تتطلب url
-  }
-
 
 export interface Project {
     _id: string;
     title: string;
     description: string;
-    images: Image[];
+    images: Url[];
     tags: string[];
     demoLink: string;
     githubLink: string;
