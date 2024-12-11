@@ -34,7 +34,7 @@ export interface Project {
     _id: string;
     title: string;
     description: string;
-    images: any[];
+    images: unknown[];
     tags: string[];
     demoLink: string;
     githubLink: string;
