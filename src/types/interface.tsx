@@ -30,11 +30,22 @@ export interface TabItem {
     label: string;
 }
 
+
+// واجهة تمثل الصورة
+export interface Image {
+    _type: string; // نوع البيانات (قد يكون مفيدًا في Sanity)
+    asset: {
+      _ref: string; // مرجع الصورة في Sanity
+      _type: string; // نوع المرجع
+    };
+  }
+
+
 export interface Project {
     _id: string;
     title: string;
     description: string;
-    images: unknown[];
+    images: Image[];
     tags: string[];
     demoLink: string;
     githubLink: string;
